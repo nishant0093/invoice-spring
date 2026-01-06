@@ -9,5 +9,5 @@ import com.invoicegenerator.project.entity.OtpEntity;
 
 @Repository
 public interface OtpRepository extends JpaRepository<OtpEntity, Integer> {
-    Optional<OtpEntity> findTopByEmailOrderByCreatedAtDesc(String email);
+    Optional<OtpEntity> findTopByEmailOrderByIdDesc(String email);
 }
